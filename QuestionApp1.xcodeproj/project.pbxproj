@@ -13,6 +13,9 @@
 		CDEAE08725C2848C0059F7B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE08525C2848C0059F7B8 /* Main.storyboard */; };
 		CDEAE08925C2848E0059F7B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE08825C2848E0059F7B8 /* Assets.xcassets */; };
 		CDEAE08C25C2848E0059F7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE08A25C2848E0059F7B8 /* LaunchScreen.storyboard */; };
+		CDEAE09625C286BA0059F7B8 /* batsuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE09525C286BA0059F7B8 /* batsuSound.mp3 */; };
+		CDEAE09A25C286CE0059F7B8 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE09825C286CE0059F7B8 /* sound.mp3 */; };
+		CDEAE09B25C286CE0059F7B8 /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE09925C286CE0059F7B8 /* maruSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CDEAE08825C2848E0059F7B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDEAE08B25C2848E0059F7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDEAE08D25C2848E0059F7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDEAE09525C286BA0059F7B8 /* batsuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = batsuSound.mp3; sourceTree = "<group>"; };
+		CDEAE09825C286CE0059F7B8 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		CDEAE09925C286CE0059F7B8 /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		CDEAE07E25C2848C0059F7B8 /* QuestionApp1 */ = {
 			isa = PBXGroup;
 			children = (
-				CDEAE07F25C2848C0059F7B8 /* AppDelegate.swift */,
-				CDEAE08125C2848C0059F7B8 /* SceneDelegate.swift */,
-				CDEAE08325C2848C0059F7B8 /* ViewController.swift */,
-				CDEAE08525C2848C0059F7B8 /* Main.storyboard */,
-				CDEAE08825C2848E0059F7B8 /* Assets.xcassets */,
+				CDEAE0A125C288460059F7B8 /* Model */,
+				CDEAE0A325C288CE0059F7B8 /* View */,
+				CDEAE0A225C288600059F7B8 /* Controller */,
+				CDEAE09525C286BA0059F7B8 /* batsuSound.mp3 */,
+				CDEAE09925C286CE0059F7B8 /* maruSound.mp3 */,
+				CDEAE09825C286CE0059F7B8 /* sound.mp3 */,
 				CDEAE08A25C2848E0059F7B8 /* LaunchScreen.storyboard */,
 				CDEAE08D25C2848E0059F7B8 /* Info.plist */,
 			);
 			path = QuestionApp1;
+			sourceTree = "<group>";
+		};
+		CDEAE0A125C288460059F7B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDEAE0A225C288600059F7B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDEAE07F25C2848C0059F7B8 /* AppDelegate.swift */,
+				CDEAE08125C2848C0059F7B8 /* SceneDelegate.swift */,
+				CDEAE08325C2848C0059F7B8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDEAE0A325C288CE0059F7B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDEAE08525C2848C0059F7B8 /* Main.storyboard */,
+				CDEAE08825C2848E0059F7B8 /* Assets.xcassets */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEAE09625C286BA0059F7B8 /* batsuSound.mp3 in Resources */,
 				CDEAE08C25C2848E0059F7B8 /* LaunchScreen.storyboard in Resources */,
 				CDEAE08925C2848E0059F7B8 /* Assets.xcassets in Resources */,
 				CDEAE08725C2848C0059F7B8 /* Main.storyboard in Resources */,
+				CDEAE09A25C286CE0059F7B8 /* sound.mp3 in Resources */,
+				CDEAE09B25C286CE0059F7B8 /* maruSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
