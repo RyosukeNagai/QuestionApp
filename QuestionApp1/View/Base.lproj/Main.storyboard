@@ -20,29 +20,54 @@
                                 <rect key="frame" x="87" y="90" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgE-GE-6gn">
-                                <rect key="frame" x="87" y="565" width="76" height="62"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgE-GE-6gn">
+                                <rect key="frame" x="61" y="532" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="maru"/>
+                                <connections>
+                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jT-yL-pEz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgL-xR-Z1W">
-                                <rect key="frame" x="237" y="564" width="90" height="62"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WgL-xR-Z1W">
+                                <rect key="frame" x="218" y="531" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="batsu"/>
+                                <connections>
+                                    <action selector="answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9u9-Gq-lBd"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最高得点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8t-OY-o8U">
+                                <rect key="frame" x="41" y="751" width="103" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="０" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4g-U2-5aH">
+                                <rect key="frame" x="201" y="750" width="163" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="lHx-tg-AVa" id="BsH-wi-b0Z"/>
+                        <outlet property="maxScoreLabel" destination="S4g-U2-5aH" id="C8c-50-N45"/>
+                        <segue destination="lkT-XG-Rkw" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" id="gbN-1D-Pkc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="250.72463768115944" y="-10.044642857142856"/>
+            <point key="canvasLocation" x="244.92753623188409" y="-75"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="Xpi-Sz-mid">
             <objects>
-                <viewController id="lkT-XG-Rkw" sceneMemberID="viewController">
+                <viewController id="lkT-XG-Rkw" customClass="NextViewController" customModule="QuestionApp1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HdL-8T-MAC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +116,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="batsu" width="128" height="128"/>
         <image name="home" width="128" height="128"/>
+        <image name="maru" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
