@@ -12,13 +12,13 @@ class ImagesModel{
     //画像名を取得して、その画像名が人間かそうで無いかをプラグによって判定するための機能
     
     let imageText:String
-    let answwer:Bool
+    let answer:Bool
     
     init(imageName:String,correctOrNot:Bool){
         
         imageText = imageName
         
-        answwer = correctOrNot
+        answer = correctOrNot
         
     }
     
