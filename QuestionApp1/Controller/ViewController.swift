@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var maxScoreLabel: UILabel!
     
+    let imagesList = ImagesList()
     
     
     override func viewDidLoad() {
