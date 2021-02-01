@@ -104,6 +104,9 @@
                                 <rect key="frame" x="143" y="430" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
+                                <connections>
+                                    <action selector="back:" destination="lkT-XG-Rkw" eventType="touchUpInside" id="vcg-Iu-Cww"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xhk-Mt-pg4"/>
