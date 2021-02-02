@@ -25,13 +25,14 @@ class ViewController: UIViewController,NowScoreDelegate {
     
     //IBActionで検知した正答がどちらなのか取得する変数
     var pickedAnswer = false
-    var withOutMp3 = WithOutMP3()
+    
+    var soundFile = SoundFile()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        
+        imageView.layer.cornerRadius = 20.0
     }
     
     //画面遷移(モーダルで)戻ってきた時に値を初期化するコード
@@ -60,18 +61,18 @@ class ViewController: UIViewController,NowScoreDelegate {
         
         if (sender as AnyObject).tag == 1{
             
-            withOutMp3.playSound(fileName: "maruSound", extensionName: "mp3")
+            // 丸ボタンの音声を流す
+            soundFile.playSound(fileName: "maruSound", extensionName: "mp3")
             
             pickedAnswer = true
             
-             
-            // 丸ボタンの音声を流す
-            
+            // ×ボタンの音声を流す
         }else if (sender as AnyObject).tag == 2{
+            
+            soundFile.playSound(fileName: "batsuSound", extensionName: "mp3")
             
             pickedAnswer = false
             
-            // ×ボタンの音声を流す
         }
         
         //チェック回答が合っているか(pickedAnswerとImagesListのcorrectOrNotの値が一致しているかどうか)
