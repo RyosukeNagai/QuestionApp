@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,NowScoreDelegate {
+    
+    
     
     
     @IBOutlet weak var imageView: UIImageView!
@@ -39,6 +41,13 @@ class ViewController: UIViewController {
         questionNumber = 0
         
         imageView.image = UIImage(named: imagesList.list[0].imageText)
+        
+        if UserDefaults.standard.objectIsForced(forKey: "beforeCount") != nil{
+            maxScore = UserDefaults.standard.object(forKey: "beforeCount") as! Int
+        }
+        
+        maxScoreLabel.text = String(maxScore)
+        
         
     }
 
@@ -96,12 +105,20 @@ class ViewController: UIViewController {
         
     }
     
+    func nowScore(score: Int) {
+        
+        maxScoreLabel.text = String(score)
+        
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "next"{
             let nextVC = segue.destination as! NextViewController
             nextVC.correctedCount = correctCount
             nextVC.wrongCount = wrongCount
+            nextVC.delegate = self
         }
         
     }
