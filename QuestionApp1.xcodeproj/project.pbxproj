@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDBB201125C8D5D100C74950 /* SoundFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB201025C8D5D100C74950 /* SoundFile.swift */; };
+		CDBB201425C8DA8F00C74950 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB201325C8DA8F00C74950 /* Animal.swift */; };
+		CDBB201725C8DAF600C74950 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB201625C8DAF600C74950 /* Human.swift */; };
+		CDBB201A25C8DCCD00C74950 /* WithOutMP3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB201925C8DCCD00C74950 /* WithOutMP3.swift */; };
 		CDEAE08025C2848C0059F7B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE07F25C2848C0059F7B8 /* AppDelegate.swift */; };
 		CDEAE08225C2848C0059F7B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE08125C2848C0059F7B8 /* SceneDelegate.swift */; };
 		CDEAE08425C2848C0059F7B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE08325C2848C0059F7B8 /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDBB201025C8D5D100C74950 /* SoundFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundFile.swift; sourceTree = "<group>"; };
+		CDBB201325C8DA8F00C74950 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		CDBB201625C8DAF600C74950 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		CDBB201925C8DCCD00C74950 /* WithOutMP3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOutMP3.swift; sourceTree = "<group>"; };
 		CDEAE07C25C2848C0059F7B8 /* QuestionApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEAE07F25C2848C0059F7B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDEAE08125C2848C0059F7B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +93,10 @@
 			children = (
 				CDEAE0A825C6BA060059F7B8 /* ImagesModel.swift */,
 				CDEAE0AB25C6BBC50059F7B8 /* ImagesList.swift */,
+				CDBB201025C8D5D100C74950 /* SoundFile.swift */,
+				CDBB201925C8DCCD00C74950 /* WithOutMP3.swift */,
+				CDBB201325C8DA8F00C74950 /* Animal.swift */,
+				CDBB201625C8DAF600C74950 /* Human.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,9 +195,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDEAE08425C2848C0059F7B8 /* ViewController.swift in Sources */,
+				CDBB201425C8DA8F00C74950 /* Animal.swift in Sources */,
+				CDBB201125C8D5D100C74950 /* SoundFile.swift in Sources */,
 				CDEAE0AC25C6BBC50059F7B8 /* ImagesList.swift in Sources */,
+				CDBB201725C8DAF600C74950 /* Human.swift in Sources */,
 				CDEAE0A625C295830059F7B8 /* NextViewController.swift in Sources */,
 				CDEAE08025C2848C0059F7B8 /* AppDelegate.swift in Sources */,
+				CDBB201A25C8DCCD00C74950 /* WithOutMP3.swift in Sources */,
 				CDEAE08225C2848C0059F7B8 /* SceneDelegate.swift in Sources */,
 				CDEAE0A925C6BA060059F7B8 /* ImagesModel.swift in Sources */,
 			);

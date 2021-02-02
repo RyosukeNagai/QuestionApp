@@ -25,9 +25,12 @@ class ViewController: UIViewController,NowScoreDelegate {
     
     //IBActionで検知した正答がどちらなのか取得する変数
     var pickedAnswer = false
+    var withOutMp3 = WithOutMP3()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
     }
     
@@ -42,8 +45,10 @@ class ViewController: UIViewController,NowScoreDelegate {
         
         imageView.image = UIImage(named: imagesList.list[0].imageText)
         
-        if UserDefaults.standard.objectIsForced(forKey: "beforeCount") != nil{
+        if UserDefaults.standard.object(forKey: "beforeCount") != nil{
+            
             maxScore = UserDefaults.standard.object(forKey: "beforeCount") as! Int
+            
         }
         
         maxScoreLabel.text = String(maxScore)
@@ -54,6 +59,8 @@ class ViewController: UIViewController,NowScoreDelegate {
     @IBAction func answer(_ sender: Any) {
         
         if (sender as AnyObject).tag == 1{
+            
+            withOutMp3.playSound(fileName: "maruSound", extensionName: "mp3")
             
             pickedAnswer = true
             
@@ -124,3 +131,4 @@ class ViewController: UIViewController,NowScoreDelegate {
     }
 
 }
+ 
