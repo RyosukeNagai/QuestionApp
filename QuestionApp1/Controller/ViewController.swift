@@ -28,9 +28,17 @@ class ViewController: UIViewController,NowScoreDelegate {
     
     var soundFile = SoundFile()
     
+    var changeColor = ChangeColor()
+    
+    var gradientLayer = CAGradientLayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gradientLayer = changeColor.changeColor(topR: 0.98, topG: 0.78, topB: 0.60, topAlpha: 1.0, bottomtR: 1.0, bottomtG: 0.60, bottomtB: 0.70, bottomtAlpha: 1.0)
+        gradientLayer.frame = view.bounds
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
         
         imageView.layer.cornerRadius = 20.0
     }
@@ -98,7 +106,7 @@ class ViewController: UIViewController,NowScoreDelegate {
     
     func nextQuestions(){
         
-        if questionNumber <= 9{
+        if questionNumber <= 11{
             
             questionNumber = questionNumber + 1
             imageView.image = UIImage(named:imagesList.list[questionNumber].imageText)
@@ -115,6 +123,7 @@ class ViewController: UIViewController,NowScoreDelegate {
     
     func nowScore(score: Int) {
         
+        soundFile.playSound(fileName: "sound", extensionName: "mp3")
         maxScoreLabel.text = String(score)
         
         

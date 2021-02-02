@@ -12,15 +12,15 @@
 		CDBB201725C8DAF600C74950 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB201625C8DAF600C74950 /* Human.swift */; };
 		CDBB201A25C8DCCD00C74950 /* WithOutMP3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB201925C8DCCD00C74950 /* WithOutMP3.swift */; };
 		CDBB201E25C9295500C74950 /* ChageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB201D25C9295500C74950 /* ChageColor.swift */; };
+		CDBB202125C9510800C74950 /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDBB202025C9510700C74950 /* maruSound.mp3 */; };
+		CDBB202525C956F600C74950 /* batsuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDBB202425C956F600C74950 /* batsuSound.mp3 */; };
 		CDEAE08025C2848C0059F7B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE07F25C2848C0059F7B8 /* AppDelegate.swift */; };
 		CDEAE08225C2848C0059F7B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE08125C2848C0059F7B8 /* SceneDelegate.swift */; };
 		CDEAE08425C2848C0059F7B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE08325C2848C0059F7B8 /* ViewController.swift */; };
 		CDEAE08725C2848C0059F7B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE08525C2848C0059F7B8 /* Main.storyboard */; };
 		CDEAE08925C2848E0059F7B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE08825C2848E0059F7B8 /* Assets.xcassets */; };
 		CDEAE08C25C2848E0059F7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE08A25C2848E0059F7B8 /* LaunchScreen.storyboard */; };
-		CDEAE09625C286BA0059F7B8 /* batsuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE09525C286BA0059F7B8 /* batsuSound.mp3 */; };
 		CDEAE09A25C286CE0059F7B8 /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE09825C286CE0059F7B8 /* sound.mp3 */; };
-		CDEAE09B25C286CE0059F7B8 /* maruSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDEAE09925C286CE0059F7B8 /* maruSound.mp3 */; };
 		CDEAE0A625C295830059F7B8 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE0A525C295820059F7B8 /* NextViewController.swift */; };
 		CDEAE0A925C6BA060059F7B8 /* ImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE0A825C6BA060059F7B8 /* ImagesModel.swift */; };
 		CDEAE0AC25C6BBC50059F7B8 /* ImagesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEAE0AB25C6BBC50059F7B8 /* ImagesList.swift */; };
@@ -32,6 +32,8 @@
 		CDBB201625C8DAF600C74950 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		CDBB201925C8DCCD00C74950 /* WithOutMP3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOutMP3.swift; sourceTree = "<group>"; };
 		CDBB201D25C9295500C74950 /* ChageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChageColor.swift; sourceTree = "<group>"; };
+		CDBB202025C9510700C74950 /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = maruSound.mp3; path = ../../../../maruSound.mp3; sourceTree = "<group>"; };
+		CDBB202425C956F600C74950 /* batsuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = batsuSound.mp3; path = ../../../../batsuSound.mp3; sourceTree = "<group>"; };
 		CDEAE07C25C2848C0059F7B8 /* QuestionApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEAE07F25C2848C0059F7B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDEAE08125C2848C0059F7B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,9 +42,7 @@
 		CDEAE08825C2848E0059F7B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDEAE08B25C2848E0059F7B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDEAE08D25C2848E0059F7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CDEAE09525C286BA0059F7B8 /* batsuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = batsuSound.mp3; sourceTree = "<group>"; };
 		CDEAE09825C286CE0059F7B8 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
-		CDEAE09925C286CE0059F7B8 /* maruSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = maruSound.mp3; sourceTree = "<group>"; };
 		CDEAE0A525C295820059F7B8 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		CDEAE0A825C6BA060059F7B8 /* ImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModel.swift; sourceTree = "<group>"; };
 		CDEAE0AB25C6BBC50059F7B8 /* ImagesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesList.swift; sourceTree = "<group>"; };
@@ -81,8 +81,8 @@
 				CDEAE0A125C288460059F7B8 /* Model */,
 				CDEAE0A325C288CE0059F7B8 /* View */,
 				CDEAE0A225C288600059F7B8 /* Controller */,
-				CDEAE09525C286BA0059F7B8 /* batsuSound.mp3 */,
-				CDEAE09925C286CE0059F7B8 /* maruSound.mp3 */,
+				CDBB202425C956F600C74950 /* batsuSound.mp3 */,
+				CDBB202025C9510700C74950 /* maruSound.mp3 */,
 				CDEAE09825C286CE0059F7B8 /* sound.mp3 */,
 				CDEAE08A25C2848E0059F7B8 /* LaunchScreen.storyboard */,
 				CDEAE08D25C2848E0059F7B8 /* Info.plist */,
@@ -181,12 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDEAE09625C286BA0059F7B8 /* batsuSound.mp3 in Resources */,
 				CDEAE08C25C2848E0059F7B8 /* LaunchScreen.storyboard in Resources */,
 				CDEAE08925C2848E0059F7B8 /* Assets.xcassets in Resources */,
 				CDEAE08725C2848C0059F7B8 /* Main.storyboard in Resources */,
+				CDBB202125C9510800C74950 /* maruSound.mp3 in Resources */,
+				CDBB202525C956F600C74950 /* batsuSound.mp3 in Resources */,
 				CDEAE09A25C286CE0059F7B8 /* sound.mp3 in Resources */,
-				CDEAE09B25C286CE0059F7B8 /* maruSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
